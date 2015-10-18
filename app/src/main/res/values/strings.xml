@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">List View With Base Adapters</string>
+    <string name="title_activity_main">Main Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="base_list_activity">Base List Activity</string>
+    <string name="base_grid_activity">Base Grid Activity</string>
+    <string name="blog_template">Blog Template</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="blog_titles">
+        <item>Intelligence</item>
+        <item>Thinking</item>
+        <item>Reasoning</item>
+        <item>Correlating</item>
+        <item>Learning</item>
+        <item>Imagining</item>
+        <item>Applying</item>
+    </string-array>
+
+    <string-array name="blog_descriptions">
+        <item>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</item>
+        <item>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose</item>
+        <item>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</item>
+        <item>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</item>
+        <item>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose</item>
+        <item>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.</item>
+    </string-array>
+<string name="scroll_text">
+    A trivial limitation of Robotium is that, it can run test cases only on one given Application/Package. This blog gives a work around to overcome this Limitation.
+Problem Statement
+When you are testing system Apps in android you would have come across a situation where you need to test 2 applications which depend on each other.
+If you are doing it manually then its not a big deal but when it comes to automating it, it\'s one of the biggest challenge if you are using Robotium for testing these applications.
+Robotium is built on J-unit Frame Work and it runs test case on only one package which is specified in project\'s manifest file. Due to this running test case on multiple package is not possible.
+
+Idea!
+In every automation testing basically we comparing Expected vs Actual. Most of the time both expected and actual values exist in same package but sometime it might happen that expected and actual may exist in different packages.
+So basically the Idea is to test these 2 test cases separately and whenever the expected and actual values has to exchanged, it can be kept at some place where it can be accessed by both the test cases. so there are 2 Possibilities:
+A trivial limitation of Robotium is that, it can run test cases only on one given Application/Package. This blog gives a work around to overcome this Limitation.
+Problem Statement
+When you are testing system Apps in android you would have come across a situation where you need to test 2 applications which depend on each other.
+If you are doing it manually then its not a big deal but when it comes to automating it, it\'s one of the biggest challenge if you are using Robotium for testing these applications.
+Robotium is built on J-unit Frame Work and it runs test case on only one package which is specified in project\'s manifest file. Due to this running test case on multiple package is not possible.
+
+Idea!
+In every automation testing basically we comparing Expected vs Actual. Most of the time both expected and actual values exist in same package but sometime it might happen that expected and actual may exist in different packages.
+So basically the Idea is to test these 2 test cases separately and whenever the expected and actual values has to exchanged, it can be kept at some place where it can be accessed by both the test cases. so there are 2 Possibilities:
+A trivial limitation of Robotium is that, it can run test cases only on one given Application/Package. This blog gives a work around to overcome this Limitation.
+Problem Statement
+When you are testing system Apps in android you would have come across a situation where you need to test 2 applications which depend on each other.
+If you are doing it manually then its not a big deal but when it comes to automating it, it\'s one of the biggest challenge if you are using Robotium for testing these applications.
+Robotium is built on J-unit Frame Work and it runs test case on only one package which is specified in project\'s manifest file. Due to this running test case on multiple package is not possible.
+
+Idea!
+In every automation testing basically we comparing Expected vs Actual. Most of the time both expected and actual values exist in same package but sometime it might happen that expected and actual may exist in different packages.
+So basically the Idea is to test these 2 test cases separately and whenever the expected and actual values has to exchanged, it can be kept at some place where it can be accessed by both the test cases. so there are 2 Possibilities:
+</string>
+    <string-array name="blog_dps">
+        <item>o1</item>
+        <item>o2</item>
+        <item>o3</item>
+        <item>o4</item>
+        <item>o5</item>
+        <item>o6</item>
+        <item>o7</item>
+    </string-array>
+    <string name="title_activity_base_adapter_list">Base Adapter Grid Activity</string>
+    <string name="title_activity_base_adapter_grid">Base Adapter Grid Activity</string>
+    <string name="title_activity_blog_template">BlogTemplate</string>
+    <string name="blog_title">Intelligence</string>
+    <string name="title_activity_map">Map</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/o2"
+        app:border="true"
+        app:border_color="#EEEEEE"
+        app:border_width="4dp"
+        app:shadow="true"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dp"
+        android:layout_toRightOf="@+id/dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/dp"
+        android:text="Small Text"
+        android:scrollHorizontally="true"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</RelativeLayout>

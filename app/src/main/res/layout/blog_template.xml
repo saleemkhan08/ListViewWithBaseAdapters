@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:id="@+id/blogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/blog_title"
+        android:textColor="#666"
+        />
+    <com.pkmmte.view.CircularImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/blogDp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/o2"
+        android:padding="20dp"
+        />
+    <TextView
+        android:padding="20dp"
+        android:id="@+id/content"
+        android:textSize="20sp"
+        android:gravity="center_horizontal|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scroll_text"/>
+    </LinearLayout>
+</ScrollView>

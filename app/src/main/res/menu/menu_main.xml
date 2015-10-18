@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.thnkin.listviewwithbaseadapters.MainActivity">
+    <item
+        android:id="@+id/base_list"
+        android:orderInCategory="100"
+        android:title="@string/base_list_activity"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/base_grid"
+        android:orderInCategory="100"
+        android:title="@string/base_grid_activity"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/blog_temp"
+        android:orderInCategory="100"
+        android:title="@string/blog_template"
+        app:showAsAction="never" />
+</menu>
